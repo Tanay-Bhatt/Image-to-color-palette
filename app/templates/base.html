@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+	<title>Image to Color Palette Generator</title>
+</head>
+<body>
+	
+	<span class="fork"><a href="https://github.com/Tanay-Bhatt/Image-to-color-palette">Fork me on GitHub <i class="fa fa-github"></i> </a></span>
+
+	<nav>
+		<div class="logo">
+			<div class="img"></div>
+			<p class="title">Image to Color Palette</p>
+		</div>
+	</nav>
+
+	<main class="content">
+		{% block content %}
+		{% endblock %}
+	</main>
+
+</body>
+</html>
