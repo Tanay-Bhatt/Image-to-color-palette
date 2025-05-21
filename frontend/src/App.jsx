@@ -43,7 +43,7 @@ function App() {
     const formData = new FormData();
     formData.append("image", file);
     try {
-      const URL = "https://image-to-color-palette.vercel.app/"  // use localhost for testing 
+      const URL = "https://image-to-color-palette-py52.onrender.com/"  // use localhost for testing 
       const res = await fetch(`${URL}generate-palette`, {
         method: "POST",
         body: formData,
